@@ -146,7 +146,7 @@ export default function ChartComponent() {
           باشد.
         </p>
       </div>
-    <div className="w-full min-h-[500px] md:min-h-96  flex flex-col md:flex-row gap-5 items-center justify-between">
+    <div className="w-full min-h-[180px] md:min-h-96  flex flex-col md:flex-row gap-5 items-center justify-between">
       
    
 

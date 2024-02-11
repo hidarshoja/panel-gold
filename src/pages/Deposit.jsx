@@ -28,7 +28,7 @@ export default function Deposit() {
     <div className="w-full">
       <div className="w-[95%] md:w-[60%] mx-auto">
         <h2 className="text-color2 text-3xl font-semibold">واریز وجه</h2>
-        <div className="w-full h-[500px] mt-5 rounded-lg bg-color1 p-6 flex flex-col gap-2   shadow-md shadow-color1">
+        <div className="w-full min-h-[500px] mt-5 rounded-lg bg-color1 p-6 flex flex-col gap-2   shadow-md shadow-color1">
           <div className="flex items-center justify-between text-color3 text-xl font-serif">
             <h3>مبلغ خود را وارد کنید :</h3>
             <span className="text-3xl">

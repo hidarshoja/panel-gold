@@ -218,7 +218,7 @@ export default function Ticket() {
                     backgroundColor: "rgba(0, 0, 0, 0.5)",
                   }}
                 >
-                  <div className="relative w-[40%] rounded-xl py-5 px-10 min-h-[420px] bg-gray-500 shadow-lg shadow-slate-600">
+                  <div className="relative w-[90%] md:w-[40%] rounded-xl py-5 px-10 min-h-[420px] bg-gray-500 shadow-lg shadow-slate-600">
                     <p>
                       {
                         <span
