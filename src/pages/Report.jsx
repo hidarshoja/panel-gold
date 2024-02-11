@@ -201,7 +201,7 @@ export default function Report() {
                   }}
                 >
                  
-                   <div className="relative w-[60%] rounded-xl py-5 px-10 h-80 bg-white shadow-lg shadow-slate-600">
+                   <div className="relative w-[90%] md:w-[60%]  rounded-xl py-5 px-10 h-80 bg-white shadow-lg shadow-slate-600" style={{minHeight:"500px"}}>
                    <p>{ <span className="absolute top-3 left-3 text-2xl cursor-pointer"
                       onClick={handleCloseModal}
                     >
