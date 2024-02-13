@@ -80,11 +80,11 @@ import './App.css'
               <Transition.Child
                 as={Fragment}
                 enter="transition ease-in-out duration-300 transform"
-                enterFrom="-translate-x-full"
+                enterFrom="translate-x-full"
                 enterTo="translate-x-0"
                 leave="transition ease-in-out duration-300 transform"
                 leaveFrom="translate-x-0"
-                leaveTo="-translate-x-full"
+                leaveTo="translate-x-full"
               >
                 <Dialog.Panel className="relative mr-16 flex w-full max-w-xs flex-1">
                   <Transition.Child
@@ -96,7 +96,7 @@ import './App.css'
                     leaveFrom="opacity-100"
                     leaveTo="opacity-0"
                   >
-                    <div className="absolute left-full top-0 flex w-16 justify-center pt-5">
+                    <div className="absolute right-[82%] top-0 flex w-16 justify-center pt-5">
                       <button type="button" className="-m-2.5 p-2.5" onClick={() => setSidebarOpen(false)}>
                         <span className="sr-only">Close sidebar</span>
                         <XMarkIcon className="h-6 w-6 text-white" aria-hidden="true" />
@@ -117,7 +117,7 @@ import './App.css'
                         <li>
                           <ul role="list" className="-mx-2 space-y-1">
                             {navigation.map((item) => (
-                              <li key={item.name}>
+                              <li key={item.name} onClick={() => setSidebarOpen(false)}>
                                 <Link
                                   to={item.href}
                                   className={classNames(
@@ -250,7 +250,7 @@ import './App.css'
                     leaveFrom="transform opacity-100 scale-100"
                     leaveTo="transform opacity-0 scale-95"
                   >
-                    <Menu.Items className="absolute right-0 z-10 mt-2.5 w-32 origin-top-right rounded-md bg-white py-2 shadow-lg ring-1 ring-gray-900/5 focus:outline-none">
+                    <Menu.Items className="absolute left-0 z-10 mt-2.5 w-32 origin-top-right rounded-md bg-white py-2 shadow-lg ring-1 ring-gray-900/5 focus:outline-none">
                       {userNavigation.map((item) => (
                         <Menu.Item key={item.name}>
                           {({ active }) => (
