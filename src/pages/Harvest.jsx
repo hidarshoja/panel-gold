@@ -63,10 +63,10 @@ export default function Harvest() {
   };
 
   const formatCardNumber = (inputValue) => {
-    // حذف همه اعداد غیر از اعداد (از 0 تا 9)
+
     let formatted = inputValue.replace(/\D/g, "");
 
-    // اعمال قالب‌بندی 4 رقم 4 رقم با خط فاصله
+   
     formatted = formatted.replace(/(\d{4})(?=\d)/g, "$1-");
 
     return formatted;

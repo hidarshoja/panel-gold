@@ -39,7 +39,7 @@ export default function Dashboard() {
         {/* <button onClick={()=>dispatch(changeId(20))}>change</button>
         {user_id} */}
         <div className="flex items-center justify-center  mt-10 flex-wrap gap-3">
-          <div className="w-60 h-60 rounded-lg bg-color1 p-4 flex flex-col gap-2  justify-between">
+          <div className="w-80 md:w-60 h-60 rounded-lg bg-color1 p-4 flex flex-col gap-2  justify-between">
             <div className="flex items-center justify-between text-color3 text-sm">
               <p>قیمت خرید از پارس زرگر :</p>
               <span>
@@ -64,7 +64,7 @@ export default function Dashboard() {
               </Link>
             </div>
           </div>
-          <div className="w-60 h-60 rounded-lg bg-color1 p-4 flex flex-col gap-2  justify-between">
+          <div className="w-80 md:w-60 h-60 rounded-lg bg-color1 p-4 flex flex-col gap-2  justify-between">
             <div className="flex items-center justify-between text-color3 text-sm">
               <p>قیمت فروش به پارس زرگر :</p>
               <span>
@@ -89,7 +89,7 @@ export default function Dashboard() {
               </Link>
             </div>
           </div>
-          <div className="w-60 h-60 rounded-lg bg-color1 p-4 flex flex-col gap-2  justify-between">
+          <div className="w-80 md:w-60 h-60 rounded-lg bg-color1 p-4 flex flex-col gap-2  justify-between">
             <div className="flex items-center justify-between text-color3 text-sm">
               <p>موجودی کیف پول</p>
               <span>
@@ -112,7 +112,7 @@ export default function Dashboard() {
               </Link>
             </div>
           </div>
-          <div className="w-60 h-60 rounded-lg bg-color1 p-4 flex flex-col gap-2  justify-between">
+          <div className="w-80 md:w-60 h-60 rounded-lg bg-color1 p-4 flex flex-col gap-2  justify-between">
             <div className="flex items-center justify-between text-color3 text-sm">
               <p>موجودی کیف طلا</p>
               <span className="text-lg">
