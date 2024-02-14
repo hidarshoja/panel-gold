@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import { MdOutlinePriceChange } from "react-icons/md";
 import { FiAlertOctagon, FiAlertTriangle } from "react-icons/fi";
 import { CiCreditCard1 } from "react-icons/ci";
+import { useDispatch, useSelector } from "react-redux";
+import { changeId } from "../features/user/userSlice";
 
 import axios from "axios";
 
@@ -13,6 +15,7 @@ export default function Harvest() {
   const [bankName, setBankName] = useState("");
   const [cardInfo, setCardInfo] = useState([]);
   const [state, setState] = useState(false);
+  const user_id = useSelector(state => state.user.id)
 
   const bankNumbers = {
     "6037-99": { name: "بانک ملی ایران", icon: "/img/melei.jpg" },
@@ -240,7 +243,7 @@ export default function Harvest() {
                     </p>
                   </div>
                 </div>
-
+              {/* <p>{user_id}</p> */}
                 {state && cardInfo.length > 0 && (
                   <div>
                     {cardInfo.map((item, index) => (

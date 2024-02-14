@@ -5,12 +5,16 @@ import { AiOutlineGold } from "react-icons/ai";
 import ChartComponent from "../components/ChartComponent";
 import axios from "axios";
 import { Link } from "react-router-dom";
+// import { useDispatch, useSelector } from "react-redux";
+// import { changeId } from "../features/user/userSlice";
 
 export default function Dashboard() {
   const [goldPrice, setGoldPrice] = useState(0);
   const [walletBalance, setWalletBalance] = useState(0);
   const [sellPrice, setSellPrice] = useState(0);
   const [goldWalletBalance, setGoldWalletBalance] = useState(0);
+  // const user_id = useSelector(state => state.user.id)
+  // const dispatch = useDispatch()
 
   useEffect(() => {
     axios
@@ -32,6 +36,8 @@ export default function Dashboard() {
     <div className="w-full">
       <div className="w-[90%] mx-auto">
         <h2 className="text-color2 text-3xl font-semibold">میز کار</h2>
+        {/* <button onClick={()=>dispatch(changeId(20))}>change</button>
+        {user_id} */}
         <div className="flex items-center justify-center  mt-10 flex-wrap gap-3">
           <div className="w-60 h-60 rounded-lg bg-color1 p-4 flex flex-col gap-2  justify-between">
             <div className="flex items-center justify-between text-color3 text-sm">
