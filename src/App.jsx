@@ -55,7 +55,7 @@ const navigation = [
 // اتمام صفحات دقالت
 const userNavigation = [
   { name: "پرفایل", href: "/profile" },
-  { name: "ورود", href: "/Login" },
+  { name: "ورود", href: "/login" },
   { name: "خروج", href: "#" },
 ];
 
@@ -299,15 +299,15 @@ function App() {
                         {userNavigation.map((item) => (
                           <Menu.Item key={item.name}>
                             {({ active }) => (
-                              <a
-                                href={item.href}
+                              <Link
+                                to={item.href}
                                 className={classNames(
                                   active ? "bg-gray-50" : "",
                                   "block px-3 py-1 text-sm leading-6 text-gray-900"
                                 )}
                               >
                                 {item.name}
-                              </a>
+                              </Link>
                             )}
                           </Menu.Item>
                         ))}
